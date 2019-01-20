@@ -23,8 +23,8 @@ def command_handler(message: Message):
 @bot.edited_message_handler(content_types=['text'])
 def echo_digits(message: Message):
     print(message.from_user.id)
-    if 'Alex Goodkid' in message.text:
-        bot.reply_to(message, 'Alex is good kid')
+    if 'Alex' in message.text:
+        bot.reply_to(message, 'Alex is very bad boy :(')
         return
     reply = str(random.random())
     if message.from_user.id in USERS:
